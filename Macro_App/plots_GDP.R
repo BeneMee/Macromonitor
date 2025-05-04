@@ -39,7 +39,7 @@ df_inflation <- df_inflation %>%
 output$inflation_plot <- renderPlot({
   
   ggplot(data = df_inflation, mapping = aes(x = as.numeric(Year), y = Inflation, colour = Country)) +
-    geom_line(size = 1) +
+    geom_line(linewidth = 1) +
     labs(
       title = "Inflation Rate Over Time",
       subtitle = "Annual Consumer Price Inflation",
